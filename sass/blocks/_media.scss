@@ -1,0 +1,105 @@
+@media (max-width: 991px) {
+    .catalog {
+        margin: 0 auto;
+        width: 625px;
+        &-item:nth-child(4) {
+            margin-bottom: 26px;
+        }
+    }
+    .reviews__descr {
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 84%;
+            }
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 14px;
+        }
+        button {
+            width: 115px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 39px;
+        }
+        &__subheader {
+            font-size: 21px;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__descr {
+            margin: 0 auto;
+        }
+        &__item:not(:first-child) {
+            margin-top: 50px;
+        }
+        .button_main {
+            width: 280px;
+        }
+    }
+}
+
+
+@media (max-width: 575px) {
+    .header {
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-size: 11px;
+        }
+        .promo_button {
+            width: 108px;
+            height: 24px;
+            font-size: 9px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 26px;
+        }
+        &__subheader {
+            font-size: 14px;
+            margin-top: 0px;
+        }
+        &__icons {
+            flex-direction: column;
+            margin: 0 auto;
+            width: 110px;
+            margin-top: 50px;
+        }
+        &__icon:not(:first-child) {
+            margin-top: 20px;
+        }
+        button {
+            width: 240px;
+            height: 45px;
+            font-size: 14px;
+            &:hover {
+                background-color: #C70101;
+            }
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+    
