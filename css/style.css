@@ -266,6 +266,14 @@ button {
     font-size: 20px;
     font-weight: 500;
     margin-top: 80px; }
+  .consultation .error {
+    border: 1px solid #c70101;
+    margin-bottom: 15px; }
+  .consultation label.error {
+    border: none;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff; }
 
 .feed-form {
   margin-top: 36px;
@@ -632,6 +640,13 @@ button {
     text-align: center; }
   .modal_mini {
     min-height: 140px; }
+  .modal .error {
+    border: 1px solid #c70101;
+    margin-bottom: 15px; }
+  .modal label.error {
+    border: none;
+    text-align: center;
+    margin-bottom: 15px; }
 
 #consultation, #order, #thanks {
   display: none; }

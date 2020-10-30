@@ -123,7 +123,7 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
             <!-- Формы для заказа консультации  -->
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required type="text" placeholder="Ваше имя">
                 <input name="number" required type="number" placeholder="Ваш телефон">
                 <input name="email" required type="email" placeholder="Ваш E-mail">
@@ -474,9 +474,9 @@
             <h2 class="modal__subtitle">Просто заполните форму заявки</h2>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="number" required type="number" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="number" type="number" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
         </div>
@@ -487,9 +487,9 @@
             <h2 class="modal__subtitle">Ваш заказ:</h2>
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="number"  required type="number" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="number" type="number" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">Купить</button>
             </form>
         </div>
@@ -501,6 +501,7 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+    
     <!-- Подключение библиотеки JQuery  -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
