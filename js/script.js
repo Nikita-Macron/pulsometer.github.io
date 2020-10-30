@@ -88,4 +88,7 @@ $(document).ready(function(){
     validateForms('#order form');
     validateForms('#consultation form');
     validateForms('#consultation-form');
+
+    // Маска ввода для телефона
+    $('input[name=number]').mask("+38(999) 999-99-99");
   });
