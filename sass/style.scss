@@ -1,4 +1,6 @@
 @import 'base/variables';
+@import 'base/animations';
+@import 'base/mixin';
 * {
     margin: 0;
     padding: 0;
@@ -24,3 +26,4 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modals';
+@import 'blocks/pageup';

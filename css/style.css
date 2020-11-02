@@ -1,3 +1,23 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 * {
   margin: 0;
   padding: 0;
@@ -650,5 +670,15 @@ button {
 
 #consultation, #order, #thanks {
   display: none; }
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 40px;
+  height: 40px; }
+  .pageup img {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

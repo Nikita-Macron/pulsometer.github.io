@@ -91,4 +91,37 @@ $(document).ready(function(){
 
     // Маска ввода для телефона
     $('input[name=number]').mask("+38(999) 999-99-99");
+
+    $('form').submit(function(e) {
+      e.preventDefault(); // Отменяет стандартное поведение браузера
+      $.ajax({
+        type: "POST", //Отдаю данные на сервер
+        url: "mailer/smart.php", //Куда отправляется наш запрос
+        data: $(this).serialize()
+      }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+
+        $('form').trigger('reset');
+      });
+      return false;
+    });
+
+    // Smooth scroll and pageup
+
+    $(window).scroll(function() {
+      // При скроле больше чем 1600px
+      if ($(this).scrollTop() > 1100) {
+        $('.pageup').fadeIn();
+      } else {  
+        $('.pageup').fadeOut();
+      }
+    });
+
+    $('.pageup').click(function() {
+      $('html, body').animate({scrollTop: 0},500);
+      return false;
+    })
   });
+  
