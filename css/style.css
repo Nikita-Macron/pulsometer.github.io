@@ -3,8 +3,8 @@
     -webkit-transform: scale(1);
             transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
   to {
     -webkit-transform: scale(1);
             transform: scale(1); } }
@@ -13,8 +13,8 @@
     -webkit-transform: scale(1);
             transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4); }
   to {
     -webkit-transform: scale(1);
             transform: scale(1); } }
@@ -193,6 +193,12 @@ button {
       text-transform: uppercase;
       color: #ff0000;
       text-decoration: underline; }
+  .advantages__img_animated {
+    -webkit-animation: heartbeat 1.8s ease infinite;
+            animation: heartbeat 1.8s ease infinite; }
+    .advantages__img_animated:hover {
+      -webkit-animation-play-state: paused;
+              animation-play-state: paused; }
 
 @media (max-width: 991px) {
   .catalog {

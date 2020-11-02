@@ -120,8 +120,11 @@ $(document).ready(function(){
     });
 
     $('.pageup').click(function() {
-      $('html, body').animate({scrollTop: 0},500);
+      $('html, body').animate({scrollTop: 0},600);
       return false;
     })
+
+    // Включение плагина wow.js
+    new WOW().init();
   });
   
